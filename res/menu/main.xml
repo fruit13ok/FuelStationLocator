@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mymapdemo.MainActivity" >
+
+    <!-- 
+    <item
+        android:id="@+id/gasStationSearchOptions"
+        android:orderInCategory="101"
+        android:title="@string/menu_search_options_label"
+        android:showAsAction="ifRoom|withText"
+       />
+	 -->
+    <item
+        android:id="@+id/gasStationSearchOptions"
+        android:orderInCategory="101"
+        android:title="@string/menu_search_options_label"
+       />
+
+    <item
+        android:id="@+id/OtherEnergyStationSearchOptions"
+        android:orderInCategory="102"
+        android:title="@string/menu_search_options_2_label"
+       />
+</menu>

@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="${relativePackage}.${activityClass}" >
+    <requestFocus />
+
+	<TextView
+        android:id="@+id/tvServiceStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvMaxNumOfResults"
+    	android:layout_marginTop="30dp"
+        android:text="@string/afs_service_status" /> 
+        
+    <Spinner
+        android:id="@+id/spServiceStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+    	android:layout_alignTop="@+id/tvServiceStatus"
+    	android:layout_toRightOf="@+id/tvServiceStatus" />
+    <!-- 
+        android:entries="@array/afs_spServiceStatus_arrays" />
+	 -->
+	  
+	<TextView
+        android:id="@+id/tvAccessBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvServiceStatus"
+    	android:layout_marginTop="40dp"
+        android:text="@string/afs_access_by_label" /> 
+        
+    <Spinner
+        android:id="@+id/spAccessBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+    	android:layout_alignTop="@+id/tvAccessBy"
+    	android:layout_toRightOf="@+id/tvAccessBy" />
+    	 
+    <!-- 
+        android:entries="@array/afs_spAccessBy_arrays" />
+     -->
+
+    <TextView
+    	android:id="@+id/tvAFSSearchOption"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentLeft="true"
+    	android:layout_alignParentTop="true"
+    	android:text="@string/alternative_fuel_station_search_options_label" />
+
+    <Button
+    	android:id="@+id/btnSave"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	android:layout_centerHorizontal="true"
+    	android:onClick="onSaveAltFuelSearchOption"
+    	android:text="@string/afs_save_label" />
+
+ 
+    <TextView
+        android:id="@+id/tvEVChargingLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvAccessBy"
+    	android:layout_marginTop="40dp"
+        android:text="@string/afs_ev_charging_level_label" /> 
+        
+    <Spinner
+        android:id="@+id/spEVChargingLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+    	android:layout_alignTop="@+id/tvEVChargingLevel"
+    	android:layout_toRightOf="@+id/tvEVChargingLevel" />
+    
+    <TextView
+        android:id="@+id/tvAFSFuelType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvEVChargingLevel"
+    	android:layout_marginTop="40dp"
+        android:text="@string/afs_fuel_type_label" /> 
+        
+    <Spinner
+        android:id="@+id/spAFSFuelType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+    	android:layout_alignTop="@+id/tvAFSFuelType"
+    	android:layout_toRightOf="@+id/tvAFSFuelType" />
+     
+    <!-- 
+        android:entries="@array/afs_spEVChargingLevel_arrays" />
+     -->
+    
+
+    <TextView
+    	android:id="@+id/tvAFSDistance"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAFSSearchOption"
+    	android:layout_marginTop="30dp"
+    	android:text="@string/afs_distance_label" />
+
+    <EditText
+    	android:id="@+id/etAFSDistance"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:layout_alignTop="@+id/tvAFSDistance"
+    	android:ems="10"
+    	android:gravity="right"
+    	android:maxLength="2"
+    	android:inputType="number"
+    	android:text="@string/afs_distance_default_value" />
+
+    <TextView
+    	android:id="@+id/tvMaxNumOfResults"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAFSDistance"
+    	android:layout_marginTop="30dp"
+    	android:text="@string/afs_max_num_of_results_label" />
+
+    <EditText
+    	android:id="@+id/etMaxNumOfResults"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:layout_alignTop="@+id/tvMaxNumOfResults"
+    	android:ems="10"
+    	android:gravity="right"
+    	android:maxLength="2"
+    	android:inputType="number"
+    	android:text="@string/afs_default_max_num_of_results" />
+    
+</RelativeLayout>

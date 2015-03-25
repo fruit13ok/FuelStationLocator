@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="${relativePackage}.${activityClass}" >
+
+	<TextView
+        android:id="@+id/tvSearchOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="12dp"
+        android:text="@string/gas_station_search_options_label" />
+    
+      <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/etDistance"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/distance_label" /> 
+        
+    <EditText
+        android:id="@+id/etDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="@string/distance_default_value"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:layout_alignLeft="@+id/btnSave"
+        android:layout_below="@+id/tvSearchOption"
+         android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp" />
+    <requestFocus />
+
+     <TextView
+        android:id="@+id/tvFuelType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/spinnerFuelType"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/fuel_type_label" /> 
+        
+    <Spinner
+        android:id="@+id/spinnerFuelType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_alignLeft="@+id/etDistance"
+         android:layout_marginRight="10dp"
+        android:layout_below="@+id/etDistance" />
+
+     <TextView
+        android:id="@+id/tvSortBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/spinnerSortBy"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sort_by_label" /> 
+        
+    <Spinner
+        android:id="@+id/spinnerSortBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_alignLeft="@+id/etDistance"
+         android:layout_marginRight="10dp"
+        android:layout_below="@+id/spinnerFuelType" />
+
+   
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerSortBy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/save_label" />
+
+</RelativeLayout>

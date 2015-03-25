@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">MyMapDemo</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="title_activity_gas_station_info">GasStationInfoActivity</string>
+	<string name="gas_station_name">gas station name</string>
+	<string name="gas_station_address">gas station address</string>
+	<string name="gas_station_distance">gas station distance</string>
+	<string name="regular_lable">Regular $</string>
+	<string name="regular_price">N/A</string>
+	<string name="midgrade_lable">Midgrade $</string>
+	<string name="midgrade_price">N/A</string>
+	<string name="premium_lable">Premium $</string>
+	<string name="premium_price">N/A</string>
+	<string name="diesel_lable">Diesel $</string>
+	<string name="diesel_price">N/A</string>
+	<string name="back">Back</string>
+	<string name="title_activity_gas_station_search_option">GasStationSearchOptionActivity</string>
+	<string name="save_label">Save</string>
+	<string name="gas_station_search_options_label">Gas Station Search Options</string>
+	<string name="distance_label">Distance</string>
+	<string name="fuel_type_label">Fuel Type</string>
+	<string name="sort_by_label">Sort By</string>
+	<!-- 
+	<string name="menu_search_options_label">Search Options</string>
+	 -->
+	 
+	<string name="menu_search_options_label">Gas Station Search Options</string>
+    <string name="menu_search_options_2_label">Other Energy Search Options</string>
+    
+	<string name="distance_default_value">5</string>
+
+	<string-array name="fuel_type_array">
+		<item>reg</item>
+		<item>mid</item>
+		<item>pre</item>
+		<item>diesel</item>
+	</string-array>
+	<string-array name="sort_by_array">
+		<item>distance</item>
+		<item>price</item>
+	</string-array>
+
+	<string name="title_activity_alternative_fuel_station_result">AlternativeFuelStationResultActivity</string>
+	<string name="alternative_fuel_station_name">alternative fuel station name</string>
+	<string name="alternative_fuel_station_address">alternative fuel station address</string>
+	<string name="alternative_fuel_station_distance">alternative fuel station distance</string>
+	<string name="alternative_fuel_station_phone">alternative fuel station phone</string>
+	<string name="alternative_fuel_station_access_days_time">alternative fuel station hours of operation</string>
+	<string name="alternative_fuel_station_cards_accepted">alternative fuel station cards accepted</string>
+	<string name="alternative_fuel_station_expected_date">alternative fuel station expected date of opening</string>
+	<string name="alternative_fuel_station_bd_blends">alternative fuel biodiesel</string>
+	<string name="alternative_fuel_station_e85_blender_pump">alternative fuel ethanol E85</string>
+	<string name="alternative_fuel_station_lpg_primary">alternative fuel propane</string>
+	<string name="alternative_fuel_station_ng_fill_type_code">alternative fuel station type of dispensing capability</string>
+	<string name="alternative_fuel_station_ng_psi">alternative fuel PSI pressures</string>
+	<string name="alternative_fuel_station_ng_vehicle_class">alternative fuel station maximum vehicle size</string>
+	<string name="alternative_fuel_station_ev_level1_evse_num">alternative fuel station number of Level 1 EVSE (standard 110V outlet)</string>
+	<string name="alternative_fuel_station_ev_level2_evse_num">alternative fuel station number of Level 2 EVSE (J1772 connector)</string>
+	<string name="alternative_fuel_station_ev_dc_fast_num">alternative fuel station number of DC Fast Chargers</string>
+	<string name="alternative_fuel_station_ev_other_evse">alternative fuel station number of other evse</string>
+	<string name="title_activity_alternative_fuel_station_search_option">AlternativeFuelStationSearchOptionActivity</string>
+
+	<string name="alternative_fuel_station_search_options_label">Alternative Fuel Station Search Options</string>
+	<string name="afs_distance_label">Distance</string>
+	<string name="afs_distance_default_value">5</string>
+	<string name="afs_service_status">Service Status</string>
+	<string name="afs_save_label">Save</string>
+	<string name="afs_access_by_label">Access By</string>
+	<string name="afs_ev_charging_level_label">Ev Charging Level</string>
+	<string name="afs_max_num_of_results_label">max results</string>
+	<string name="afs_default_max_num_of_results">5</string>
+	<string name="afs_fuel_type_label">Alternative Fuel Type</string>
+	
+	<string-array name="afs_spServiceStatus_arrays">
+		<item>all</item>
+        <item>in service</item>
+        <item>out of service</item>
+    </string-array>
+    
+    <string-array name="afs_spAccessBy_arrays">
+		<item>all</item>
+        <item>public</item>
+        <item>private</item>
+    </string-array>
+    
+    <string-array name="afs_spEVChargingLevel_arrays">
+		<item>all</item>
+        <item>1</item>
+        <item>2</item>
+        <item>dc_fast</item>
+    </string-array>
+    
+    <string-array name="afs_spFuelType_arrays">
+		<item>all</item>
+        <item>BD</item>
+        <item>CNG</item>
+        <item>E85</item>
+        <item>ELEC</item>
+        <item>HY</item>
+        <item>LNG</item>
+        <item>LPG</item>
+    </string-array>
+    
+</resources>

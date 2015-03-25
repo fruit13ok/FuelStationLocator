@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="${relativePackage}.${activityClass}" >
+
+	<TextView
+		android:id="@+id/tvGasStationName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:text="@string/gas_station_name"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<TextView
+		android:id="@+id/tvRegularPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/tvRegularLabel"
+		android:layout_alignParentRight="true"
+		android:text="@string/regular_price" />
+
+	<TextView
+		android:id="@+id/tvMidgradeLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/tvRegularLabel"
+		android:layout_marginTop="20dp"
+		android:text="@string/midgrade_lable" />
+
+	<TextView
+		android:id="@+id/tvMidgradePrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/tvMidgradeLabel"
+		android:layout_alignParentRight="true"
+		android:text="@string/midgrade_price" />
+
+	<TextView
+		android:id="@+id/tvPremiumLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/tvMidgradeLabel"
+		android:layout_marginTop="20dp"
+		android:text="@string/premium_lable" />
+
+	<TextView
+		android:id="@+id/tvPremiumPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/tvPremiumLabel"
+		android:layout_alignParentRight="true"
+		android:text="@string/premium_price" />
+
+	<TextView
+		android:id="@+id/tvDieselLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/tvPremiumLabel"
+		android:layout_marginTop="20dp"
+		android:text="@string/diesel_lable" />
+
+	<TextView
+		android:id="@+id/tvDieselPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/tvDieselLabel"
+		android:layout_alignParentRight="true"
+		android:text="@string/diesel_price" />
+
+	<TextView
+		android:id="@+id/tvGasStationAddress"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvGasStationName"
+		android:layout_centerHorizontal="true"
+		android:text="@string/gas_station_address" />
+
+	<TextView
+		android:id="@+id/tvRegularLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/tvGasStationDistance"
+		android:layout_marginTop="20dp"
+		android:text="@string/regular_lable" />
+
+	<Button
+		android:id="@+id/btnBack"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:onClick="onBack"
+		android:text="@string/back" />
+
+	<TextView
+		android:id="@+id/tvGasStationDistance"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvGasStationAddress"
+		android:layout_centerHorizontal="true"
+		android:text="@string/gas_station_distance" />
+
+</RelativeLayout>

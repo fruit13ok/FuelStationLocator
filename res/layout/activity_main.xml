@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="${packageName}.${activityClass}" >
+	 
+	<EditText
+		android:id="@+id/etAddress"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:ems="10"
+		android:hint="enter address" />
+	<!-- 
+	<fragment
+		android:id="@+id/map"
+		android:name="com.google.android.gms.maps.MapFragment"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/btAFSSearch" />
+	 -->
+	<fragment
+		android:id="@+id/map"
+		android:name="com.google.android.gms.maps.SupportMapFragment"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/btAFSSearch" />
+
+	<Button
+		android:id="@+id/btGSSearch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignTop="@+id/btAFSSearch"
+		android:onClick="onGSSearch"
+		android:text="Gas Station"
+		android:textSize="12sp" />
+
+	<Button
+		android:id="@+id/btAFSSearch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/etAddress"
+		android:onClick="onAFSSearch"
+		android:text="Alternative Fuel Station"
+		android:textSize="12sp" />
+	
+</RelativeLayout>

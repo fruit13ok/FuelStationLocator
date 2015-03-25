@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationName"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:text="@string/alternative_fuel_station_name"
+    	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationAddress"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationName"
+    	android:text="@string/alternative_fuel_station_address" />
+
+    <Button
+    	android:id="@+id/btnBack2"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	android:onClick="onBack2"
+    	android:layout_centerHorizontal="true"
+    	android:text="@string/back" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationPhone"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationAddress"
+    	android:text="@string/alternative_fuel_station_phone" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationDistance"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationPhone"
+    	android:text="@string/alternative_fuel_station_distance" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationAccessDaysTime"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationDistance"
+    	android:text="@string/alternative_fuel_station_access_days_time" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationCardsAccepted"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationAccessDaysTime"
+    	android:text="@string/alternative_fuel_station_cards_accepted" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationExpectedDate"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationCardsAccepted"
+    	android:text="@string/alternative_fuel_station_expected_date" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationBDBlends"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationExpectedDate"
+    	android:text="@string/alternative_fuel_station_bd_blends" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationE85BlenderPump"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationBDBlends"
+    	android:text="@string/alternative_fuel_station_e85_blender_pump" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationLPGPrimary"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationE85BlenderPump"
+    	android:text="@string/alternative_fuel_station_lpg_primary" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationNGFillTypeCode"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationLPGPrimary"
+    	android:text="@string/alternative_fuel_station_ng_fill_type_code" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationNGPsi"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationNGFillTypeCode"
+    	android:text="@string/alternative_fuel_station_ng_psi" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationNGVehicleClass"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationNGPsi"
+    	android:text="@string/alternative_fuel_station_ng_vehicle_class" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationEVLevel1EvseNum"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationNGVehicleClass"
+    	android:text="@string/alternative_fuel_station_ev_level1_evse_num" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationEVLevel2EvseNum"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationEVLevel1EvseNum"
+    	android:text="@string/alternative_fuel_station_ev_level2_evse_num" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationEVDCFastNum"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationEVLevel2EvseNum"
+    	android:text="@string/alternative_fuel_station_ev_dc_fast_num" />
+
+    <TextView
+    	android:id="@+id/tvAlternativeFuelStationEVOtherEvse"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tvAlternativeFuelStationEVDCFastNum"
+    	android:text="@string/alternative_fuel_station_ev_other_evse" />
+
+</RelativeLayout>
